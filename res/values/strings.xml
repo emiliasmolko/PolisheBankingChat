@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">eBanking.v3</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="speech_prompt">Proszę mówić&#8230;</string>
+    <string name="speech_end">Proszę czekać...</string>
+    <string name="speech_repeat">NIE ROZUMIEM! Proszę powtórzyć.</string>
+    <string name="speech_error">Wystąpił błąd. Proszę powtórzyć.</string>
+    <string name="speech_not_supported">Niestety! Twoje urządzenie nie udostępnia mikrofonu!</string>
+    <string name="tap_on_mic">Naciśnij mikrofon, by mówić!</string>
+
+</resources>

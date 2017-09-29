@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fnBtn="http://schemas.android.com/apk/res-auto"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:addStatesFromChildren="false"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="top"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <com.munatayev.timur.ibm.ebankingdemov3.Particles.ParticleView
+                android:id="@+id/pv_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:layout_weight="2"
+                pv:pv_background_color="#757575"
+                pv:pv_host_text="eBanking"
+                pv:pv_host_text_size="24sp"
+                pv:pv_particle_text="IBM"
+                pv:pv_particle_text_size="40sp"
+                pv:pv_text_color="#BBDEFB" />
+
+        </LinearLayout>
+
+        <!--  Email Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="#BBDEFB">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#BBDEFB"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#BBDEFB"
+                    android:textColorLink="#BBDEFB" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.98">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#BBDEFB">
+
+                    <EditText
+                        android:id="@+id/input_password"
+                        style="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#BBDEFB"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="#BBDEFB"
+                        android:textColorHint="#BBDEFB"
+                        android:textColorLink="#BBDEFB" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ibFaceRec"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right|center"
+                    android:background="@android:drawable/ic_menu_camera" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--  Password Label -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.munatayev.timur.ibm.ebankingdemov3.ViewPack.FancyButton
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                fnBtn:btnStyle="stroke"
+                fnBtn:progressColor="#BBDEFB"
+                fnBtn:strokeColor="#BBDEFB"
+                fnBtn:strokeWidth="2"
+                fnBtn:text="Login"
+                fnBtn:textColor="#BBDEFB"
+                fnBtn:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

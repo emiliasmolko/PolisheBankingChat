@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.munatayev.timur.ibm.ebankingdemov3.ViewPack.SurfaceBackgroundView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:id="@+id/background"/>
+
+    <com.munatayev.timur.ibm.ebankingdemov3.ViewPack.SurfaceListenIndicatorView
+        android:id="@+id/surfaceListenIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.munatayev.timur.ibm.ebankingdemov3.ViewPack.SurfaceTitleView
+        android:id="@+id/surfaceTitleView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.munatayev.timur.ibm.ebankingdemov3.ViewPack.SurfaceScrollView
+        android:id="@+id/surface_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="ANULUJ"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+</FrameLayout>
